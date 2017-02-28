@@ -3,6 +3,22 @@
 <script>
     var embed = new Apiary.Embed({
         subdomain: 'contentdeliveryapibuiltiocontentstack',
+        customFonts: {
+            families: [
+                {
+                    name: 'Proxima Nova',
+                    style: 'normal',
+                    weight: 200,
+                    formats: [
+                        {
+                            format: 'otf',
+                            url: '/static/fonts/ProximaNova-Regular.otf'
+                        }
+
+                    ]
+                }
+            ]
+        },
         header: '#customHeader',
         preferences: {
             defaultHost: "production",
@@ -14,6 +30,8 @@
             "production"
         ],
         theme: {
+            fontFamily: "Proxima Nova,Helvetica,Arial,sans-serif",
+           // fontFamily: 'Comic Sans MS',
             tableOfContents: {
                 section: {
                     title:{

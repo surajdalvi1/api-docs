@@ -1,10 +1,18 @@
 body {
     margin: 0px;
+
+}
+
+.markdown p{
+    font-family: proximaNovaRegular !important;
 }
 
 .top-header {
     background: #e44952;
-    border-bottom: 1px solid #dc313b;
+    border-bottom: 1px solid #cc0f23;
+    box-shadow:0 2px 2px -1px rgba(0,0,0,.15);
+    position: relative;
+    z-index: 99;
 }
 
 .top-header .fixed-header {
@@ -60,26 +68,38 @@ body {
 }
 
 .top-header .fixed-header .inner-content .api{
-    padding-right: 10%;
+    width: auto;
+    float: left;
+    margin-left: 12%;
 }
 
 .top-header .fixed-header .inner-content .header-right.api ul li a{
     border: 0;
     border-radius: 0;
-    padding: 8px 15px 8px 0;
+    padding: 25px 10px 26px;
     text-decoration: none;
+    color: #fff;
+    opacity: .6;
+    text-transform:uppercase;
+    font-family: proximaNovaRegular;
+    font-size: 13px;
+    line-height: 22px;
 }
 
-.top-header .fixed-header .inner-content .header-right ul li a:hover {
-    background: #ffffff;
-    border: 2px solid #ffffff;
-    color: #e74a53;
-}
 
 .top-header .fixed-header .inner-content .header-right.api ul li a:hover {
     background: none;
     border: 0;
-    color: #000;
+    color: #fff;
+    opacity: 1 ;
+    border-bottom: 2px solid #ffffff;
+}
+.top-header .fixed-header .inner-content .header-right.api ul li.active a {
+    background: none;
+    border: 0;
+    color: #fff;
+    opacity: 1;
+    border-bottom: 2px solid #ffffff;
 }
 
 .top-header .fixed-header .inner-content .header-right ul li + li {
