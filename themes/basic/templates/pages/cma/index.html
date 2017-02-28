@@ -1,0 +1,36 @@
+{% extends "layouts/default.html" %}
+{% block content %}
+<script>
+    var embed = new Apiary.Embed({
+        subdomain: "contentmanagementapicontentstack",
+        header: "#customHeader",
+        preferences: {
+            defaultHost: "production",
+            permalink: true,
+            collapseMachineColumnByDefault: true,
+            fluidHumanColumn: true
+        },
+        hosts: [
+            "production"
+        ],
+        theme: {
+            tableOfContents: {
+                section: {
+                    title: {
+                        text: {
+                            "fontSize": "10pt"
+                        }
+
+                    },
+                    item: {
+                        "fontSize": "15px",
+                        "line-height": "22px"
+                    }
+                }
+
+            }
+        }
+    });
+</script>
+
+{% endblock %}
