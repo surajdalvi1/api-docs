@@ -1,10 +1,11 @@
 {
-    "name": "heruko",
-    "version": "0.0.1",
-    "dependencies": {
-        "contentstack-express": "^1.0.0"
-    },
-    "scripts": {
-        "start": "node app.js"
-    }
+  "name": "heruko",
+  "version": "0.0.1",
+  "dependencies": {
+    "basic-auth-connect": "^1.0.0",
+    "contentstack-express": "^1.0.0"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
 }
