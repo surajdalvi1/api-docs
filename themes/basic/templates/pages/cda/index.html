@@ -38,11 +38,40 @@
                         text:{
                             "fontSize":"10pt"
                         }
-
                     },
                     item: {
+                        "outline":"none",
                         "fontSize":"15px",
-                        "line-height":"22px"
+                        "line-height":"22px",
+                        "background-repeat":"no-repeat",
+                        "background-position":"-12px -6px",
+                        "padding-left":"15px;",
+                        "background-image":"url(https://contentstack.built.io/v2/uploads/58e357f89c16a824496892b7/download?uid=blt3cc2301ae95a716e&disposition=inline)",
+                        $selected: {
+                            text: {
+                                "color": "#e44952",
+                                "font-weight":"300"
+                            }
+                        },
+                        subitems:{
+                            "border":"none",
+                            "outline":"none",
+                            "position":"relative",
+                            subitem:{
+                                "outline":"none",
+                                "border": "none",
+                                "background-repeat":"no-repeat",
+                                "background-position":"-12px 1px",
+                                "padding-left":"12px;",
+                                "background-image":"url(https://contentstack.built.io/v2/uploads/58e34171e4f524fe4ce0ce11/download?uid=blt08dd42b4e9b47706&disposition=inline)",
+                                $selected: {
+                                    text: {
+                                        "color": "#e44952",
+                                        "font-weight":"300"
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
 
@@ -50,5 +79,4 @@
         }
     });
 </script>
-
 {% endblock %}
