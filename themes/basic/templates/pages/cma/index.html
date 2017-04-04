@@ -2,7 +2,7 @@
 {% block content %}
 <script>
     var embed = new Apiary.Embed({
-        subdomain: "contentmanagementapicontentstack",
+        subdomain: 'contentmanagementapicontentstack',
         customFonts: {
             families: [
                 {
@@ -19,12 +19,12 @@
                 }
             ]
         },
-        header: "#customHeader",
+        header: '#customHeader',
         preferences: {
             defaultHost: "production",
-            permalink: true,
-            collapseMachineColumnByDefault: true,
-            fluidHumanColumn: true
+            fluidHumanColumn: true,
+            permalinks: true,
+            collapseMachineColumnByDefault: true
         },
         hosts: [
             "production"
@@ -79,5 +79,4 @@
         }
     });
 </script>
-
 {% endblock %}
