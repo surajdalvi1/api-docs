@@ -1,5 +1,6 @@
 {% extends "layouts/default.html" %}
 {% block content %}
+
 <script>
     var embed = new Apiary.Embed({
         subdomain: 'contentmanagementapicontentstack',
@@ -8,11 +9,18 @@
                 {
                     name: 'Proxima Nova',
                     style: 'normal',
-                    weight: 200,
                     formats: [
                         {
                             format: 'otf',
-                            url: '/static/fonts/ProximaNova-Regular.otf'
+                            url: '/static/fonts/proxima/ProximaNova-Regular.otf'
+                        },
+                        {
+                            format: 'otf',
+                            url: '/static/fonts/proxima/Proxima Nova Alt Light.otf'
+                        },
+                        {
+                            format: 'otf',
+                            url: '/static/fonts/ProximaNova-Semibold.otf'
                         }
 
                     ]
@@ -30,44 +38,52 @@
             "production"
         ],
         theme: {
-            fontFamily: "Proxima Nova,Helvetica,Arial,sans-serif",
-            // fontFamily: 'Comic Sans MS',
             tableOfContents: {
+                fontFamily: "'ProximaNova-Regular', Arial, Helvetica, Sans-Serif",
+                "margin-left": "0",
+                "padding": "30px 5px 0 35px",
+                "backgroundColor": "#fafafa",
                 section: {
                     title:{
                         text:{
-                            "fontSize":"10pt"
+                            color: "#4f6471",
+                            fontWeight:"400",
+                            fontSize: "16px",
+                            textTransform: "capitalize"
                         }
                     },
                     item: {
-                        "outline":"none",
-                        "fontSize":"15px",
-                        "line-height":"22px",
-                        "background-repeat":"no-repeat",
-                        "background-position":"-12px -6px",
-                        "padding-left":"15px;",
-                        "background-image":"url(https://contentstack.built.io/v2/uploads/58e357f89c16a824496892b7/download?uid=blt3cc2301ae95a716e&disposition=inline)",
+                        outline:"none",
+                        fontSize:"15px",
+                        lineHeight:"22px",
+                        backgroundRepeat:"no-repeat",
+                        backgroundPosition:"-13px -6px",
+                        paddingLeft:"15px;",
+                        backgroundImage:"url(https://contentstack.built.io/v2/uploads/58e357f89c16a824496892b7/download?uid=blt3cc2301ae95a716e&disposition=inline)",
                         $selected: {
                             text: {
-                                "color": "#e44952",
-                                "font-weight":"300"
+                                color: "#e44952",
+                                fontWeight:"300"
                             }
                         },
                         subitems:{
-                            "border":"none",
-                            "outline":"none",
-                            "position":"relative",
+                            border:"none",
+                            outline:"none",
+                            position:"relative",
                             subitem:{
-                                "outline":"none",
-                                "border": "none",
-                                "background-repeat":"no-repeat",
-                                "background-position":"-12px 1px",
-                                "padding-left":"12px;",
-                                "background-image":"url(https://contentstack.built.io/v2/uploads/58e34171e4f524fe4ce0ce11/download?uid=blt08dd42b4e9b47706&disposition=inline)",
+                                fontSize:"14px",
+                                lineHeight:"20px",
+                                outline:"none",
+                                border: "none",
+                                backgroundRepeat:"no-repeat",
+                                backgroundPosition:"-13px 1px",
+                                marginLeft: "1px",
+                                paddingLeft:"12px;",
+                                backgroundImage:"url(https://contentstack.built.io/v2/uploads/58e34171e4f524fe4ce0ce11/download?uid=blt08dd42b4e9b47706&disposition=inline)",
                                 $selected: {
                                     text: {
-                                        "color": "#e44952",
-                                        "font-weight":"300"
+                                        color: "#e44952",
+                                        fontWeight:"300"
                                     }
                                 }
                             }
@@ -75,6 +91,161 @@
                     }
                 }
 
+            },
+            humanColumn: {
+                "paddingBottom": "0",
+                wrapper: {
+                    /*"background": "url(https://help.apiary.io/images/embed/Artboard.png)"*/
+                },
+                content: {
+                    apiName: {
+                        color: "#4f6471",
+                        fontFamily: "'Proxima Nova Alt Light', Arial, Helvetica, Sans-Serif",
+                        /*fontFamily: "proximaNovaLight",*/
+                        fontSize: "22px",
+                        fontWeight: "300"
+                    },
+                    section: {
+                        title: {
+                            text: {
+                                color: "#3c4f5a",
+                                fontFamily: "'Proxima Nova Alt Light', Arial, Helvetica, Sans-Serif",
+                                fontSize: "26px",
+                                textTransform: "capitalize",
+                                fontWeight: "normal"
+                            }
+                        },
+
+                        apiDescription: {
+                            p: {
+                                color: "#748590",
+                                fontFamily: "'ProximaNova-Regular', Arial, Helvetica, Sans-Serif",
+                                /*fontFamily: "proximaNovaRegular",*/
+                                fontSize: "16px",
+                                lineHeight:"22px",
+                                a: {
+                                    textDecoration: 'none',
+                                    paddingBottom: '2px',
+                                    borderBottom: '2px solid #FF6B6B',
+                                    color: '#FF6B6B'
+                                }
+                            },
+
+                            h2: {
+                                fontFamily: "'ProximaNova-Semibold', Arial, Helvetica, Sans-Serif",
+                                fontSize: "20px",
+                                color: "#3c4f5a",
+                                fontWeight: "normal"
+                            },
+
+                            h3: {
+                                fontFamily: "'ProximaNova-Regular', Arial, Helvetica, Sans-Serif",
+                                fontSize: "16px",
+                                color: "#3c4f5a"
+                            },
+                            table: {
+                                color: "#748590",
+                                fontFamily: "'ProximaNova-Regular', Arial, Helvetica, Sans-Serif",
+                                fontSize: "16px",
+                                lineHeight:"22px",
+                                thead:{
+
+                                },
+                                tbody:{
+
+                                },
+                                tr:{
+                                    td:{
+                                        padding: "8px 4px"
+                                    },
+                                    th:{
+                                        padding: "8px 4px"
+                                    }
+                                }
+                            },
+                            code:{
+                                color: "#748590",
+                                fontFamily: "'ProximaNova-Regular', Arial, Helvetica, Sans-Serif",
+                                fontSize: "16px",
+                                lineHeight:"22px",
+                                margin: "2px 0"
+                            }
+                        },
+                        resourceGroups: {
+                            resourceGroup: {
+                                name: {
+                                    color: "#3c4f5a",
+                                    fontFamily: "'Proxima Nova Alt Light', Arial, Helvetica, Sans-Serif",
+                                    fontSize: "26px",
+                                    textTransform: "capitalize",
+                                    fontWeight: "normal"
+                                },
+
+                                description: {
+                                    color: "#748590",
+                                    fontFamily: "'ProximaNova-Regular', Arial, Helvetica, Sans-Serif",
+                                    fontSize: "16px",
+                                    lineHeight:"22px"
+                                },
+
+                                resources: {
+                                    resource: {
+                                        name: {
+                                            fontFamily: "'ProximaNova-Semibold', Arial, Helvetica, Sans-Serif",
+                                            fontSize: "20px",
+                                            fontWeight: "normal"
+                                        },
+
+                                        description: {
+                                            color: "#748590",
+                                            fontFamily: "'ProximaNova-Regular', Arial, Helvetica, Sans-Serif",
+                                            fontSize: "16px",
+                                            lineHeight:"22px"
+                                        },
+                                        actions: {
+                                            action: {
+                                                invitation: {
+                                                    text: {
+                                                        fontFamily: "'ProximaNova-Semibold', Arial, Helvetica, Sans-Serif",
+                                                        fontSize: "18px",
+                                                        fontWeight: "normal"
+                                                    }
+                                                },
+
+                                                description: {
+                                                    color: "#748590",
+                                                    fontFamily: "'ProximaNova-Regular', Arial, Helvetica, Sans-Serif",
+                                                    fontSize: "16px",
+                                                    lineHeight:"22px",
+                                                    paddingLeft:"20px"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            machineColumn: {
+                content:{
+
+                },
+                header:{
+                    closeButton:{
+                        icon:{
+
+                        }
+                    },
+                    consoleButton: {
+                        button:{
+                            text:{
+
+                            }
+                        }
+                    }
+                }
             }
         }
     });

@@ -85,7 +85,12 @@ body {
     font-size: 13px;
     line-height: 22px;
 }
-
+.top-header .fixed-header .inner-content .header-right.api ul li a i{
+    display: inline;
+    vertical-align: middle;
+    color: #fff;
+    padding-left: 5px;
+}
 
 .top-header .fixed-header .inner-content .header-right.api ul li a:hover {
     background: none;
