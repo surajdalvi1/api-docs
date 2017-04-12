@@ -9,4 +9,15 @@ $( document ).ready(function() {
         }
     });
 
+    $('.mobile-nav').click(function() {
+        $('.header-right').slideToggle();
+    });
+
+    $(window).resize(function(){
+        if ($(window).width() > 852){
+            $('.header-right').css('display','block');
+        } else {
+            $('.header-right').css('display','none');
+        }
+    });
 });

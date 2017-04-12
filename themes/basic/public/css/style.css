@@ -72,11 +72,24 @@ body {
     float: left;
     margin-left: 12%;
 }
-
+.mobile-nav{
+    position: absolute;
+    right: 20px;
+    top: 22px;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 1px;
+    display: none;
+    color: #e9aeb2;
+    z-index: 99;
+}
+.mobile-nav:hover {
+    color: #fff;
+}
 .top-header .fixed-header .inner-content .header-right.api ul li a{
     border: 0;
     border-radius: 0;
-    padding: 25px 10px 26px;
+    padding: 25px 10px 24px;
     text-decoration: none;
     color: #fff;
     opacity: .6;
@@ -109,4 +122,64 @@ body {
 
 .top-header .fixed-header .inner-content .header-right ul li + li {
     margin-left: 2px;
+}
+@media screen and (max-width:960px){
+    .top-header .fixed-header .inner-content .api{
+        margin-left: 0;
+    }
+}
+@media (max-width: 852px){
+    .mobile-nav {
+        display: block;
+    }
+    .top-header .fixed-header .inner-content .header-right{
+        display: none;
+        width: 100%;
+        height: 187px;
+        background: #fafafa;
+        z-index: 9;
+        position: absolute;
+        top: 67px;
+        box-shadow: 0 2px 2px 0 #ccc;
+        border-radius: 0;
+        border: none;
+        left: 0;
+    }
+    .top-header .fixed-header .inner-content .header-right ul {
+        position: relative;
+        overflow-y: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .top-header .fixed-header .inner-content .header-right ul li {
+        width: 100%;
+    }
+    .top-header .fixed-header .inner-content .header-right ul li + li {
+        margin-left: 0;
+    }
+    .top-header .fixed-header .inner-content .header-right.api ul li a {
+        color: #4f6471;
+        font-size: 16px;
+        margin: 0 20px;
+        padding: 20px 0;
+        display:block;
+        border-bottom:1px solid #dde0e1;
+    }
+    .top-header .fixed-header .inner-content .header-right.api ul li a i {
+        color: #4f6471;
+    }
+    .top-header .fixed-header .inner-content .header-right.api ul li.active a{
+        background: none;
+        color: #e44952;
+        opacity: 1;
+        border-bottom: 1px solid #dde0e1;
+    }
+    .top-header .fixed-header .inner-content .header-right.api ul li a:hover {
+        color: #e44952;
+        border-bottom: 1px solid #dde0e1;
+    }
+    .top-header .fixed-header .inner-content .header-right.api ul li a:hover i {
+        color: #e44952;
+    }
 }

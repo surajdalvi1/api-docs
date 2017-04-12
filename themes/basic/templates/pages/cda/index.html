@@ -16,7 +16,7 @@
                         },
                         {
                             format: 'otf',
-                            url: '/static/fonts/proxima/Proxima Nova Alt Light.otf'
+                            url: '/static/fonts/proxima/ProximaNova-Light.otf'
                         },
                         {
                             format: 'otf',
@@ -47,15 +47,16 @@
                 section: {
                     title:{
                         text:{
-                            color: "#4f6471",
-                            fontWeight:"500",
+                            color: "#444",
+                            fontWeight:"600",
                             fontSize: "16px",
-                            textTransform: "capitalize"
+                            textTransform: "capitalize",
+                            borderBottom:"0"
                         }
                     },
                     item: {
                         outline:"none",
-                        color: "#748590",
+                        color: "#4A5960",
                         fontSize:"15px",
                         lineHeight:"22px",
                         fontWeight:"500",
@@ -63,6 +64,9 @@
                         backgroundPosition:"4px 7px",
                         paddingLeft:"15px;",
                         backgroundImage:"url(https://contentstack.built.io/v2/uploads/58ecc4c8c150dcf310b55ff6/download?uid=blt4e4b89b852a5201e&disposition=inline)",
+                        text:{
+                            borderBottom:"0"
+                        },
                         $selected: {
                             text: {
                                 color: "#e44952"
@@ -73,9 +77,9 @@
                             outline:"none",
                             position:"relative",
                             subitem:{
-                                color: "#748590",
+                                color: "#4A5960",
                                 fontSize:"15px",
-                                lineHeight:"22px",
+                                lineHeight:"20px",
                                 fontWeight:"500",
                                 outline:"none",
                                 border: "none",
@@ -83,11 +87,15 @@
                                 backgroundPosition:"0px 9px",
                                 marginLeft: "1px",
                                 paddingLeft:"12px;",
-                                backgroundImage:"url(https://contentstack.built.io/v2/uploads/58ecc7da217ce751099faa82/download?uid=blt8818acfadb1a8f25&disposition=inline)",
+                                /*backgroundImage:"url(https://contentstack.built.io/v2/uploads/58ecc7da217ce751099faa82/download?uid=blt8818acfadb1a8f25&disposition=inline)",*/
                                 $selected: {
                                     text: {
                                         color: "#e44952"
                                     }
+                                },
+                                text:{
+                                    borderBottom:"0",
+                                    padding:"2px"
                                 }
                             }
                         }
@@ -97,6 +105,34 @@
             },
             humanColumn: {
                 paddingBottom: "0px",
+                header:{
+                    button:{
+                        icon:{
+                            cursor:"pointer"
+                        }
+                    },
+                    breadcrumb:{
+                        overflow:"hidden",
+                        paddingLeft:"0",
+                        container:{
+                            item:{
+                                paddingLeft:"24px",
+                                fontSize:"16px",
+                                lineHeight:"71px",
+                                $section:{
+                                    color:"#4A5960",
+                                    fontWeight:"600"
+                                },
+                                $item:{
+
+                                },
+                                $subitem:{
+
+                                }
+                            }
+                        }
+                    }
+                },
                 wrapper: {
                     /*"background": "url(https://help.apiary.io/images/embed/Artboard.png)"*/
                 },
@@ -118,15 +154,11 @@
 
                         apiDescription: {
                             p: {
-                                color: "#748590",
+                                color: "#4A5960",
                                 fontSize: "16px",
                                 lineHeight:"24px",
                                 marginBottom: "26px",
                                 a: {
-                                    /*textDecoration: 'none',
-                                     paddingBottom: '2px',
-                                     borderBottom: '2px solid #FF6B6B',
-                                     color: '#FF6B6B'*/
                                     color: "#25c2a3",
                                     textDecoration: "none",
                                     borderBottom: "0"
@@ -145,7 +177,7 @@
                                 color: "#3c4f5a"
                             },
                             table: {
-                                color: "#748590",
+                                color: "#4A5960",
                                 fontSize: "16px",
                                 lineHeight:"24px",
                                 marginTop: "5px",
@@ -178,7 +210,7 @@
                                 }
                             },
                             code:{
-                                color: "#748590",
+                                color: "#4A5960",
                                 fontSize: "15px",
                                 lineHeight:"22px",
                                 margin: "2px 0"
@@ -194,7 +226,7 @@
                                 },
 
                                 description: {
-                                    color: "#748590",
+                                    color: "#4A5960",
                                     fontSize: "16px",
                                     lineHeight:"24px",
                                     p:{
@@ -213,7 +245,7 @@
                                             fontWeight: "600"
                                         },
                                         description: {
-                                            color: "#748590",
+                                            color: "#4A5960",
                                             fontSize: "16px",
                                             lineHeight:"24px",
                                             code:{
@@ -239,10 +271,15 @@
                                                     text: {
                                                         fontSize: "16px",
                                                         fontWeight: "normal"
+                                                    },
+                                                    $selected:{
+                                                        text:{
+                                                            color:"#4A5960"
+                                                        }
                                                     }
                                                 },
                                                 description: {
-                                                    color: "#748590",
+                                                    color: "#4A5960",
                                                     fontSize: "16px",
                                                     lineHeight:"24px",
                                                     paddingLeft:"20px",
