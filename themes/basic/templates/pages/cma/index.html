@@ -31,9 +31,9 @@
         header: '#customHeader',
         preferences: {
             defaultHost: "production",
-            fluidHumanColumn: true,
+            fluidHumanColumn: false,
             permalinks: true,
-            collapseMachineColumnByDefault: true
+            collapseMachineColumnByDefault: false
         },
         hosts: [
             "production"
@@ -307,9 +307,6 @@
                 }
             },
             machineColumn: {
-                content:{
-
-                },
                 header:{
                     closeButton:{
                         icon:{
@@ -318,6 +315,16 @@
                     },
                     consoleButton: {
                         button:{
+                            text:{
+
+                            }
+                        }
+                    }
+                },
+                content:{
+                    blankSlate:{
+                        title:{
+                            /*color:"#e44952",*/
                             text:{
 
                             }

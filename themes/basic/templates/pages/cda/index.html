@@ -3,7 +3,7 @@
 <script>
     var embed = new Apiary.Embed({
         subdomain: 'contentdeliveryapibuiltiocontentstack',
-        customFonts: {
+        /*customFonts: {
             families: [
                 {
                     name: 'Proxima Nova',
@@ -26,19 +26,23 @@
                     ]
                 }
             ]
+        },*/
+        customFonts: {
+            googleFonts: 'https://fonts.googleapis.com/css?family=Open+Sans:700italic,800italic,400,600,700,800'
         },
         header: '#customHeader',
         preferences: {
             defaultHost: "production",
-            fluidHumanColumn: true,
+            fluidHumanColumn: false,
             permalinks: true,
-            collapseMachineColumnByDefault: true
+            collapseMachineColumnByDefault: false
         },
         hosts: [
             "production"
         ],
         theme: {
-            fontFamily: 'Proxima Nova',
+            /*fontFamily: 'Proxima Nova',*/
+            fontFamily: 'Open Sans',
             tableOfContents: {
                 "margin-left": "0",
                 "padding": "30px 5px 0 35px",
@@ -155,7 +159,7 @@
                         apiDescription: {
                             p: {
                                 color: "#4A5960",
-                                fontSize: "16px",
+                                fontSize: "15px",
                                 lineHeight:"24px",
                                 marginBottom: "26px",
                                 a: {
@@ -178,7 +182,7 @@
                             },
                             table: {
                                 color: "#4A5960",
-                                fontSize: "16px",
+                                fontSize: "15px",
                                 lineHeight:"24px",
                                 marginTop: "5px",
                                 marginBottom: "10px",
@@ -227,7 +231,7 @@
 
                                 description: {
                                     color: "#4A5960",
-                                    fontSize: "16px",
+                                    fontSize: "15px",
                                     lineHeight:"24px",
                                     p:{
                                         a:{
@@ -246,7 +250,7 @@
                                         },
                                         description: {
                                             color: "#4A5960",
-                                            fontSize: "16px",
+                                            fontSize: "15px",
                                             lineHeight:"24px",
                                             code:{
                                                 fontSize: "15px",
@@ -306,9 +310,6 @@
                 }
             },
             machineColumn: {
-                content:{
-
-                },
                 header:{
                     closeButton:{
                         icon:{
@@ -317,6 +318,16 @@
                     },
                     consoleButton: {
                         button:{
+                            text:{
+
+                            }
+                        }
+                    }
+                },
+                content:{
+                    blankSlate:{
+                        title:{
+                            /*color:"#e44952",*/
                             text:{
 
                             }
